@@ -7,7 +7,7 @@
  */
 ?>
 
-<?php if (isset($bookmarks)) : ?>
+<?php if (isset($view['bookmarks'])) : ?>
 <table>
     <thead>
     <tr>
@@ -16,7 +16,7 @@
     </tr>
     </thead>
     <tbody>
-    <?php foreach ($bookmarks as $bookmark): ?>
+    <?php foreach ($view['bookmarks'] as $bookmark): ?>
         <tr>
             <td><?php echo $bookmark['title'] ?? ''; ?></td>
             <td><?php echo $bookmark['url'] ?? ''; ?></td>
